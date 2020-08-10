@@ -5,12 +5,11 @@ import edu.escuelaing.arem.ASE.app.model.LinkedList;
 import java.io.BufferedReader;
 import java.io.FileReader;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
+public class App {
+    /**
+     * Metodo principal de la clase App.
+     * @param args Lista de los elementos que se quieren evaluar.
+     */
     public static void main( String[] args ) {
         try {
             LinkedList<Double> elementos;
@@ -32,6 +31,10 @@ public class App
         }
     }
 
+    /**
+     * Obtiene la media y la desviación estandar de los datos ingresados.
+     * @param elementos Lista que contiene los elementos a evaluar.
+     */
     public static void calcular(LinkedList<Double> elementos){
         double mean = Calculos.mean(elementos);
         double deviation = Calculos.deviation(elementos);

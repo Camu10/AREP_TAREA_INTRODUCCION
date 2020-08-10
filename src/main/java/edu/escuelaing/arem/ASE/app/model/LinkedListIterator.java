@@ -6,17 +6,15 @@ public class LinkedListIterator<E> implements Iterator<E> {
     Node<E> current;
 
     /**
-     * Constructor del LinkedListIterator
-     *
-     * @param actual
+     * Constructor de la clase LinkedListIterator.
+     * @param actual Actual nodo en el que se encuentra el iterador.
      */
     public LinkedListIterator(Node<E> actual) {
         current = actual;
     }
 
     /**
-     * Rectifica si el actual nodo tiene un siguiente nodo
-     *
+     * Verifica si el actual nodo tiene un nodo siguiente.
      * @return boolean
      */
     public boolean hasNext() {
@@ -24,8 +22,7 @@ public class LinkedListIterator<E> implements Iterator<E> {
     }
 
     /**
-     * Retorna el valor del nodo actual
-     *
+     * Obtiene el valor del nodo actual
      * @return E
      */
     public E next() {
@@ -34,7 +31,5 @@ public class LinkedListIterator<E> implements Iterator<E> {
         return data;
     }
 
-    public void remove() {
-
-    }
+    public void remove() {}
 }

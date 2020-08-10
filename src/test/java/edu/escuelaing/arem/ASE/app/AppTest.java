@@ -10,8 +10,7 @@ import org.junit.Test;
  */
 public class AppTest {
     /**
-     * Create the test case
-     *
+     * Caso de prueba para las comprovar si se estan haciendo correctamenta los calculos.
      */
     @Test
     public void MeanDeviationTest1() {
@@ -24,6 +23,9 @@ public class AppTest {
         assertEquals(70.48 ,mean,0.01);
         assertEquals(61.097482967795,deviation, 0.01);
     }
+    /**
+     * Caso de prueba para las comprovar si se estan haciendo correctamenta los calculos.
+     */
     @Test
     public void MeanDeviationTest2() {
         LinkedList<Double> elementos = new LinkedList<Double>();
@@ -35,7 +37,9 @@ public class AppTest {
         assertEquals(638.9 ,mean,0.01);
         assertEquals(625.6339806770231,deviation, 0.01);
     }
-
+    /**
+     * Caso de prueba para las comprovar si se estan haciendo correctamenta los calculos.
+     */
     @Test
     public void MeanDeviationTest3() {
         LinkedList<Double> elementos = new LinkedList<Double>();
@@ -47,5 +51,4 @@ public class AppTest {
         assertEquals(868.6629999999999 ,mean,0.01);
         assertEquals(2017.1609354847112,deviation, 0.01);
     }
-
 }
