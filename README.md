@@ -40,7 +40,7 @@ mvn test
 * [MAVEN](https://maven.apache.org/) - Administrador de dependencias.
 * [GIT](https://git-scm.com/) - Control de versiones.
 * [JUNIT](https://junit.org/junit5/) - Framework para realizar y automatizar pruebas.
-* Java - Leguaje de programación.
+* Java - Lenguaje de programación.
 
 ## Autor
 * **Carlos Murillo** - [Camu10](https://github.com/Camu10)
