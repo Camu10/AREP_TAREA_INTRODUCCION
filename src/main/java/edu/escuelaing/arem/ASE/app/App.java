@@ -4,6 +4,7 @@ import edu.escuelaing.arem.ASE.app.calculadora.Calculos;
 import edu.escuelaing.arem.ASE.app.model.LinkedList;
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.text.DecimalFormat;
 
 public class App {
     /**
@@ -36,8 +37,9 @@ public class App {
      * @param elementos Lista que contiene los elementos a evaluar.
      */
     public static void calcular(LinkedList<Double> elementos){
+        DecimalFormat twoDForm = new DecimalFormat("#.##");
         double mean = Calculos.mean(elementos);
         double deviation = Calculos.deviation(elementos);
-        System.out.println("Mean: " + mean + " Deviation: "+ deviation);
+        System.out.println("Mean: " + twoDForm.format(mean) + " Deviation: "+ twoDForm.format(deviation));
     }
 }
